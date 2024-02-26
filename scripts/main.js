@@ -1,16 +1,20 @@
 const slide = document.querySelectorAll('.slide');
 const scrollbutton = document.querySelector('.scrollButton');
+const landing = document.querySelector('.landing')
 const main = document.querySelector('main')
 slide.forEach((elem, idx) => {
     elem.style.transform = `translateX(${idx * 100}%)`;   
 });
 scrollbutton.addEventListener('click',() =>{
     window.scrollTo({
-  top: 700,
+  top: 10000,
   left: 0,
   behavior: "smooth",
 });
-    
+})
+
+scrollbutton.addEventListener('click',() =>{
+    setTimeout(() => {landing.style.display ='none'},500)
 })
 
 let curslide = 0;

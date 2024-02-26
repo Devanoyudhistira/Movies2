@@ -1,85 +1,65 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles/style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Specialz</title>
-  
-</head>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/feather-icons"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montaga&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montaga&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            nanti: '#da373d',
-          },
-          fontFamily:{
-            'popins': ['Poppins'],
-            'montaga':['Montaga'],
-            'inter': ['Inter']
-          },
-        }
-      }
-    }
-  </script>
-<<<<<<< HEAD
-<body class="scroll-smooth flex flex-col h-max ">
-  <main class="order-2 -bottom-[32%] w-screen bg-red-600 h-[100vh]"></main>
-  <div class="landing order-1 w-screen grid h-screen overflow-x-hidden ">
-=======
-<body class="">
-  <div class="landing grid w-screen h-screen relative overflow-hidden ">
->>>>>>> 253ee25e9ff432f0c11a0c3aaaab90bcd6325473
-    
+  <style type="text/tailwindcss">
+    @layer components {
+  .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+}
+  </style>
+</head>
+<body class="scroll-smooth flex flex-col bg-red-800 h-auto overflow-hidden">
+ 
+  <div class="landing order-1 w-screen grid h-screen overflow-hidden">
     <div class="slide absolute justify-center items-center flex flex-col w-full h-full bg-gradient-to-t from-blue-950 to-black duration-500">
-      <h1 class=" inline-block -mt-[130px] mb-[80px] text-7xl bg-gradient-to-l from-sky-600 to-blue-900 bg-clip-text tracking-wide text-transparent ">SpecialZ</h1>
+      <h1 class="inline-block -mt-[130px] mb-[80px] text-7xl bg-gradient-to-l from-sky-600 to-blue-900 bg-clip-text tracking-wide text-transparent">SpecialZ</h1>
       <span class="text-md font-inter -mt-[70px] italic text-slate-700">"A place where glass becomes a cinema"</span>
       <button class="next text-blue-800 bg-neutral-900/50 text-xl font-popins h-max border-blue-700 font-bold mt-[45px] px-4 p-2 border-solid border-2">Get started</button>
     </div>
     <div class="slide relative items-center justify-center flex flex-col w-full h-full flex duration-500">
       <div class="bg-[url('movie-poster/avenger-ultron.jpg')] w-full h-full bg-center bg-cover"></div>
       <div class="absolute w-full h-full flex flex-col justify-center items-center top-0 bg-slate-950/50">
-      <div class="absolute rounded-md mt-[260px] shadow-md shadow-slate-700/70 flex flex-col justify-center gap-2 items-center px-4 py-[90px] h-[130px] bg-gradient-to-t from-blue-900 to-slate-950">
-        <span class="block rounded-md w-[13em] text-center text-lg text-slate-300 shadow-lg shadow-blue-900/50 font-popins font-thin bg-gradient-to-t from-blue-950 to-slate-900">Every best movies lies in here</span>
-        <button class="next tracking-wide rounded-lg bg-gradient-to-r from-blue-900 to-blue-800 p-2 mt-[15px] text-xl font-inter font-normal text-slate-200 bg-blue-600">next</button>
-        </div>
+        <div class="absolute rounded-md mt-[260px] shadow-md shadow-slate-700/70 flex flex-col justify-center gap-2 items-center px-4 py-[90px] h-[130px] bg-gradient-to-t from-blue-900 to-slate-950">
+          <span class="block rounded-md w-[13em] text-center text-lg text-slate-300 shadow-lg shadow-blue-900/50 font-popins font-thin bg-gradient-to-t from-blue-950 to-slate-900">Every best movie lies in here</span>
+          <button class="next tracking-wide rounded-lg bg-gradient-to-r from-blue-900 to-blue-800 p-2 mt-[15px] text-xl font-inter font-normal text-slate-200 bg-blue-600">next</button>
         </div>
       </div>
+    </div>
     <div class="slide absolute w-full h-full bg-black duration-500">
       <div class="bg-[url('movie-poster/evangelion-end.jpg')] w-full h-full bg-[70%] bg-cover"></div>
       <div class="absolute w-full h-full flex flex-col justify-center items-center top-0 bg-red-700/0">
-   <div class="absolute rounded-md -mt-[200px] shadow-md shadow-slate-700/70 flex flex-col justify-center gap-2 items-center px-4 py-[90px] h-[130px] bg-gradient-to-t from-blue-950 to-slate-950">
-        <span class="block rounded-md w-[13em] text-center text-lg text-slate-300 shadow-lg shadow-blue-900/50 font-popins font-thin bg-gradient-to-t from-blue-950 to-slate-900">Search for old anime?? This is the place</span>
-        <button class="next tracking-wide rounded-lg bg-gradient-to-r from-blue-900 to-blue-800 p-2 mt-[15px] text-xl font-inter font-normal text-slate-200 bg-blue-600">next</button>
+        <div class="absolute rounded-md -mt-[200px] shadow-md shadow-slate-700/70 flex flex-col justify-center gap-2 items-center px-4 py-[90px] h-[130px] bg-gradient-to-t from-blue-950 to-slate-950">
+          <span class="block rounded-md w-[13em] text-center text-lg text-slate-300 shadow-lg shadow-blue-900/50 font-popins font-thin bg-gradient-to-t from-blue-950 to-slate-900">Search for old anime?? This is the place</span>
+          <button class="next tracking-wide rounded-lg bg-gradient-to-r from-blue-900 to-blue-800 p-2 mt-[15px] text-xl font-inter font-normal text-slate-200 bg-blue-600">next</button>
         </div>
-        </div>
+      </div>
     </div>
     <div class="slide absolute justify-center flex w-full h-full duration-500">
-      <div class="bg-[url('movie-poster/yuru-camp.jpg')] w-full relative  h-full bg-center bg-cover"></div>
+      <div class="bg-[url('movie-poster/yuru-camp.jpg')] w-full relative h-full bg-center bg-cover"></div>
       <div class="w-[340px] top-0 rounded-br-full rounded-bl-full absolute h-[180px] bg-blue-950/50 backdrop-blur-sm"></div>
-<<<<<<< HEAD
       <div class="absolute w-full h-full text-center flex items-center justify-between flex-col top-0 bg-slate-900/60">
-        <span class="block text-slate-300 font-popins mt-[30px] font-medium text-lg w-[17em] h-auto ">So, <span class="italic font-black text-slate-400">sit down and relax</span>, grab your snack cause its time to watch your favorite <span class="font-black tracking-widest text-red-700 font-popins">movies</span>;) 
-        </span>
+        <span class="block text-slate-300 font-popins mt-[30px] font-medium text-lg w-[17em] h-auto ">So, <span class="italic font-black text-slate-400">sit down and relax</span>, grab your snack cause its time to watch your favorite <span class="font-black tracking-widest text-red-700 font-popins">movies</span>;) </span>
         <button class="scrollButton w-max animate-bounce rounded-xl mb-[10px] h-max p-2 bg-blue-950 text-blue-600 font-inter font-black"><i data-feather='arrow-down'></i></button>
       </div>
     </div>
-    
-=======
-      <div class="absolute w-full h-full text-center flex items-center flex-col top-0 bg-slate-900/60">
-        <span class="block text-slate-300 font-popins mt-[30px] font-medium text-lg w-[17em] h-auto ">So, <span class="italic font-black text-slate-400">sit down and relax</span>, grab your snack cause its time to watch your favorite <span class="font-black tracking-widest text-red-700 font-popins">movies</span>;) </span>
-      </div>
-    </div>
->>>>>>> 253ee25e9ff432f0c11a0c3aaaab90bcd6325473
-  <script>feather.replace();</script>
+  </div>
+   <div class="order-2 w-screen bg-slate-800 h-screen">
+     <h1>hajaiajkakak</h1>
+   </div>
+  <script>
+    feather.replace();
+  </script>
   <script src="scripts/main.js"></script>
 </body>
 </html>
- 
