@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Specialz</title>
   <link rel="stylesheet" href="styles/style.css"/>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -10,16 +10,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montaga&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <style type="text/tailwindcss">
-    @layer components {
-  .btn-blue {
-    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
-  }
-}
+   <style type="text/tailwindcss">
+    @layer components{
+      .button {
+        background-color:black;
+        padding:3px;
+      }
+    }
   </style>
 </head>
-<body class="scroll-smooth flex flex-col bg-red-800 h-auto overflow-hidden">
+<body class="scroll-smooth flex flex-col bg-slate-800 h-auto overflow-hidden">
  
   <div class="landing order-1 w-screen grid h-screen overflow-hidden">
     <div class="slide absolute justify-center items-center flex flex-col w-full h-full bg-gradient-to-t from-blue-950 to-black duration-500">
@@ -54,9 +54,25 @@
       </div>
     </div>
   </div>
-   <div class="order-2 w-screen bg-slate-800 h-screen">
-     <h1>hajaiajkakak</h1>
-   </div>
+   <main class="order-2 w-screen flex flex-col items-center bg-slate-900 h-screen">
+     <nav class="w-screen h-[50px] bg-gradient-to-b from-slate-950/50 to-blue-800/50 flex items-center justify-between">
+       <i data-feather='search' class="w-[90px] -ml-[20px] text-slate-300"></i>
+       <h1 class="inline-block mr-2 font-popins font-black text-xl bg-gradient-to-b from-blue-600 to-blue-900 bg-clip-text tracking-wide text-transparent">SpecialZ</h1>
+       </nav>
+     <section class="recommended h-max gap-1 overflow-hidden flex justify-center flex-col w-screen shadow-md shadow-blue-800/50 bg-blue-900/40">
+       <div class="w-full h-[200px] bg-[url('movie-poster/peacemaker.jpeg')] bg-center bg-cover "></div>
+       <div class="flex overflow-x-auto px-2 gap-2 bg-gradient-to-b from-slate-900/30 border-[0.5px] border-blue-500 to-blue-900/30">
+    <button class="w-max p-1 rounded-lg bg-gradient-to-tl from-slate-800 to-neutral-950/50">bocchi</button>
+    <button class="">captain</button>
+    <button class="">openhe</button>
+    <button class="">dark</button>
+    <button class="">peacem</button>
+    <button class="">aquaman</button>
+    <button class="">phanter</button>
+</div>
+
+     </section>
+   </main>
   <script>
     feather.replace();
   </script>
