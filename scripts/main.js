@@ -7,27 +7,8 @@ const body = document.querySelector('body');
 let rekomen = document.querySelectorAll('.rekomen');
 let ganti = document.querySelectorAll('.ganti');
 
-for(let i = 1;i < slide.length;i++)
-{
-    slide[i].style.display='none'
-}
 
-for(let i = 0;i < slide.length;i++)
-{
-    slide[i].addEventListener('click',() =>{
-        slide[i+1].style.display='block'
-    })
-}
 
-function preventDefault(e) {
-    e.preventDefault();
-}
-
-function disableScroll() {
-    window.addEventListener('scroll', preventDefault);
-}
-
-disableScroll()
 
 slide.forEach((elem, idx) => {
     elem.style.transform = `translateX(${idx * 100}%)`;   
@@ -79,7 +60,8 @@ let control = function(n){
 }
 slide2(index);
 
-/*function isBottom(el) {
+
+function isBottom(el) {
     return el.getBoundingClientRect().bottom <= window.innerHeight;
   }
 
@@ -89,7 +71,7 @@ slide2(index);
     const numItems = items.length;
     
     // Clone the existing items and append them dynamically
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 2; i++) {
       const clonedItem = items[i % numItems].cloneNode(true); // Get the item to clone
       content.appendChild(clonedItem);
     }
@@ -103,7 +85,19 @@ slide2(index);
   });
 
   // Initial load
-  loadMoreContent();*/
+  loadMoreContent();
+
+window.addEventListener('beforeunload', function() {
+    // Scroll to the top of the page
+    landing.style.display='block'
+});
+
+
+window.addEventListener('beforeunload', function() {
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
+});
+
 
 
 

@@ -40,15 +40,15 @@
     }
   </script>
 </head>
-<body class="scroll-smooth flex flex-col bg-slate-800 h-auto w-auto overflow-hidden">
+<body class="scroll-smooth flex flex-col bg-slate-800 md:bg-green-700 h-auto w-auto overflow-hidden">
  
   <div class="landing order-1 w-screen grid h-screen overflow-hidden">
-    <div class="slide absolute justify-center items-center flex flex-col w-full h-full bg-gradient-to-t from-blue-950 overflow-hidden to-black duration-500">
+    <div class="slide touch-none absolute justify-center items-center flex flex-col w-full h-full bg-gradient-to-t from-blue-950 overflow-hidden to-black duration-500">
       <h1 class="inline-block -mt-[130px] mb-[80px] text-7xl bg-gradient-to-l from-sky-600 to-blue-900 bg-clip-text tracking-wide text-transparent">SpecialZ</h1>
       <span class="text-md font-inter -mt-[70px] italic text-slate-700">"A place where glass becomes a cinema"</span>
       <button class="next text-blue-800 bg-neutral-900/50 text-xl font-popins h-max border-blue-700 font-bold mt-[45px] px-4 p-2 border-solid border-2">Get started</button>
     </div>
-    <div class="slide relative overflow-hidden items-center justify-center flex flex-col w-full h-full flex duration-500">
+    <div class="slide touch-none relative overflow-hidden items-center justify-center flex flex-col w-full h-full flex duration-500">
       <div class="bg-[url('movie-poster/avenger-ultron.jpg')] w-full h-full bg-center bg-cover"></div>
       <div class="absolute w-full h-full flex flex-col justify-center items-center top-0 bg-slate-950/50">
         <div class="absolute rounded-md mt-[260px] shadow-md shadow-slate-700/70 flex flex-col justify-center gap-2 items-center px-4 py-[90px] h-[130px] bg-gradient-to-t from-blue-900 to-slate-950">
@@ -68,24 +68,24 @@
     </div>
     <div class="slide touch-none absolute overflow-hidden justify-center flex w-full h-full duration-500">
       <div class="bg-[url('movie-poster/yuru-camp.jpg')] w-full relative h-full bg-center bg-cover"></div>
-      <div class="w-[340px] ml-[20px] top-0 rounded-br-full rounded-bl-full absolute h-[180px] bg-blue-950/50 backdrop-blur-sm"></div>
+      <div class="w-[340px] ml-[20px] sm:ml-[150px] top-0 rounded-br-full rounded-bl-full absolute h-[180px] bg-blue-950/50 backdrop-blur-sm"></div>
       <div class="absolute w-full h-full text-center flex items-center justify-between flex-col top-0 bg-slate-900/60">
         <span class="block text-slate-300 font-popins mt-[30px] font-medium text-lg w-[17em] h-auto ">So, <span class="italic font-black text-slate-400">sit down and relax</span>, grab your snack cause its time to watch your favorite <span class="font-black tracking-widest text-red-700 font-popins">movies</span>;) </span>
         <button class="scrollButton w-max animate-bounce rounded-xl mb-[10px] h-max p-2 bg-blue-950 text-blue-600 font-inter font-black"><i data-feather='arrow-down'></i></button>
       </div>
     </div>
   </div>
-   <main class="order-2 w-screen flex flex-col items-center pb-2 bg-gradient-to-b from-slate-950/50 to-blue-800/50 h-auto">
+   <main class="order-2 w-screen flex flex-col items-center pb-2 bg-gradient-to-b from-slate-950/50 to-blue-800/50 h-auto overflow-hidden">
      <nav class="w-screen h-[50px] bg-gradient-to-b from-slate-950/50 to-blue-800/50 flex items-center justify-between">
        <i data-feather='search' class="w-[90px] -ml-[20px] text-slate-300"></i>
        <h1 class="inline-block mr-2 font-popins font-black text-xl bg-gradient-to-b from-blue-600 to-blue-900 bg-clip-text tracking-wide text-transparent">SpecialZ</h1>
        </nav>
      <section class="recommended h-max gap-1 overflow-hidden flex justify-center flex-col w-screen shadow-md shadow-blue-800/50 bg-blue-900/40">
-       <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/blackphanter.jpeg')] bg-center bg-cover "></div>
-       <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/batman.jpeg')] bg-center bg-cover "></div>
-       <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/rename.jpeg')] bg-center bg-cover "></div>
-       <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/doctor.jpeg')] bg-center bg-cover "></div>
-       <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/peacemaker.jpeg')] bg-top bg-cover "></div>
+       <div class="rekomen animate-fadein w-full h-[170px]  sm:h-[270px] bg-[url('movie-poster/blackphanter.jpeg')] bg-center bg-cover "></div>
+       <div class="rekomen animate-fadein w-full h-[170px]  sm:h-[270px] bg-[url('movie-poster/batman.jpeg')] bg-center bg-cover "></div>
+       <div class="rekomen animate-fadein w-full h-[170px]  sm:h-[270px] bg-[url('movie-poster/rename.jpeg')] bg-center bg-cover "></div>
+       <div class="rekomen animate-fadein w-full h-[170px]  sm:h-[270px] bg-[url('movie-poster/doctor.jpeg')] bg-center bg-cover "></div>
+       <div class="rekomen animate-fadein w-full h-[170px] sm:h-[270px] bg-[url('movie-poster/peacemaker.jpeg')] bg-top bg-cover "></div>
        
        <div class="flex whitespace-nowrap overflow-x-auto px-2 py-2 gap-[50px] bg-gradient-to-b from-slate-900/30 to-blue-900/30">
     <button class="ganti px-2 py-[15px] rounded-lg bg-gradient-to-t from-slate-800/30 from-50% to-slate-300/10" onclick='control(0)'> 
