@@ -40,7 +40,7 @@ scrollbutton.addEventListener('click',() =>{
 
 scrollbutton.addEventListener('click',() =>{
     window.scrollTo({
-  top: 610 * window.innerHeight,
+  top:window.innerHeight,
   left: 0,
   behavior: "smooth",
 });
