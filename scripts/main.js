@@ -5,7 +5,7 @@ const landing = document.querySelector('.landing');
 const main = document.querySelector('main');
 const body = document.querySelector('body');
 let rekomen = document.querySelectorAll('.rekomen');
-let ganti = document.querySelectorAll('.ganti')
+let ganti = document.querySelectorAll('.ganti');
 
 slide.forEach((elem, idx) => {
     elem.style.transform = `translateX(${idx * 100}%)`;   
@@ -49,7 +49,9 @@ let slide2 = function(n){
     rekomen[n].style.display = 'block'
 }
 let control = function(n){
-    setTimeout(slide2(index = n),2000 )
-    
+    slide2(index = n)
 }
-slide2(index)
+slide2(index);
+
+
+

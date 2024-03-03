@@ -15,7 +15,12 @@
     tailwind.config = {
       theme: {
         extend: {
-          
+          fontFamily: {
+      'inter':['Inter'],
+      'robot':['Roboto+Mono'],
+      'merry':['Merriweather'],
+      'popins':['Poppins']
+    },
           animation:{
             'fadein':'fadein 2000ms',
             'fadeout':'fadeout 2000ms'
@@ -70,7 +75,7 @@
       </div>
     </div>
   </div>
-   <main class="order-2 w-screen flex flex-col items-center bg-gradient-to-b from-slate-950/50 to-blue-800/50 h-screen">
+   <main class="order-2 w-screen flex flex-col items-center pb-2 bg-gradient-to-b from-slate-950/50 to-blue-800/50 h-auto">
      <nav class="w-screen h-[50px] bg-gradient-to-b from-slate-950/50 to-blue-800/50 flex items-center justify-between">
        <i data-feather='search' class="w-[90px] -ml-[20px] text-slate-300"></i>
        <h1 class="inline-block mr-2 font-popins font-black text-xl bg-gradient-to-b from-blue-600 to-blue-900 bg-clip-text tracking-wide text-transparent">SpecialZ</h1>
@@ -80,31 +85,62 @@
        <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/bocchi.jpg')] bg-center bg-cover "></div>
        <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/rename.jpeg')] bg-center bg-cover "></div>
        <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/doctor.jpeg')] bg-center bg-cover "></div>
-       <div class="flex overflow-x-auto px-2 py-2 gap-[50px] bg-gradient-to-b from-slate-900/30 to-blue-900/30">
+       <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/peacemaker.jpeg')] bg-top bg-cover "></div>
+       
+       <div class="flex whitespace-nowrap overflow-x-auto px-2 py-2 gap-[50px] bg-gradient-to-b from-slate-900/30 to-blue-900/30">
     <button class="ganti px-2 py-[15px] rounded-lg bg-gradient-to-t from-slate-800/30 from-50% to-slate-300/10" onclick='control(0)'> 
-      <div class="w-[90px] h-[30px] bg-[url('movie-poster/bocchi-title.png')] bg-center bg-cover"></div> 
+      <div class="w-[90px] h-[30px] bg-[url('movie-poster/blackphanter.png')] bg-center bg-cover"></div> 
     </button>
     <button class="ganti px-2 py-[15px] rounded-lg bg-gradient-to-t from-slate-800/30 from-50% to-slate-300/10" onclick='control(1)'> 
-      <div class="w-[90px] h-[30px] bg-[url('movie-poster/oppenheimer.png')] bg-center bg-cover"></div> 
+      <div class="w-[90px] h-[30px] bg-[url('movie-poster/bocchi-title.png')] bg-center bg-cover"></div> 
        </button>
     <button class="ganti px-2 py-[15px] rounded-lg bg-gradient-to-t from-slate-800/30 from-50% to-slate-300/10" onclick='control(2)'> 
-      <div class="w-[90px] h-[30px] bg-[url('movie-poster/blackphanter.png')] bg-center bg-cover"></div> 
+      <div class="w-[90px] h-[30px] bg-[url('movie-poster/aquaman.png')] bg-center bg-cover"></div> 
        </button>
          <button class="ganti px-2 py-[15px] rounded-lg bg-gradient-to-t from-slate-800/30 from-50% to-slate-300/10"onclick='control(3)'> 
-      <div class="w-[90px] h-[30px] bg-[url('movie-poster/blackphanter.png')] bg-center bg-cover"></div> 
+      <div class="w-[90px] h-[30px] bg-[url('movie-poster/doctor-strange.png')] bg-center bg-cover"></div> 
        </button>
-<!--<button class="ganti px-2 py-[15px] rounded-lg bg-gradient-to-t from-slate-800/30 from-50% to-slate-300/10"> 
+<button class="ganti px-2 py-[15px] rounded-lg bg-gradient-to-t from-slate-800/30 from-50% to-slate-300/10"> 
+      <div class="w-[90px] h-[30px] bg-[url('movie-poster/peacemaker.png')] bg-bottom bg-cover" onclick='control(4)'></div> 
+       </button>
+    <button class="ganti px-2 py-[15px] rounded-lg bg-gradient-to-t from-slate-800/30 from-50% to-slate-300/10"> 
       <div class="w-[90px] h-[30px] bg-[url('movie-poster/blackphanter.png')] bg-center bg-cover"></div> 
        </button>
     <button class="ganti px-2 py-[15px] rounded-lg bg-gradient-to-t from-slate-800/30 from-50% to-slate-300/10"> 
       <div class="w-[90px] h-[30px] bg-[url('movie-poster/blackphanter.png')] bg-center bg-cover"></div> 
        </button>
-    <button class="ganti px-2 py-[15px] rounded-lg bg-gradient-to-t from-slate-800/30 from-50% to-slate-300/10"> 
-      <div class="w-[90px] h-[30px] bg-[url('movie-poster/blackphanter.png')] bg-center bg-cover"></div> 
-       </button> -->
 </div>
+</section>
+     <article class="w-[95%] mt-2 h-[250px] rounded-lg whitespace-nowrap overflow-x-auto flex bg-blue-800 gap-[10px] p-2 justify-left snap-type-mandatory">
+       <div class="w-[70%] flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+         <img src="movie-poster/doctor.jpeg" class="w-[95%] -mt-[25px] h-[95%] rounded-lg object-center object-contain">
+         <h1 class="-mt-[39px] -ml-[50px] font-popins font-medium text-xl tracking-wider">Doctor Strange</h1>
+         <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-slate-300 focus:text-slate-900 font-popins font-medium focus:bg-indigo-600 flex items-center justify-center">watch</button>
+       </div>
+       <div class="w-[70%] flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+         <img src="movie-poster/blackphanter.jpeg" class="w-[95%] -mt-[25px] h-[95%] rounded-lg object-center object-contain">
+         <h1 class="-mt-[39px] -ml-[55px] font-popins font-medium text-xl tracking-wider">BLACK PHANTER</h1>
+         <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
+       </div>
+       <div class="w-[70%] flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+         <img src="movie-poster/rename.jpeg" class="w-[95%] -mt-[25px] h-[95%] rounded-lg object-center object-contain">
+         <h1 class="-mt-[39px] -ml-[95px] font-popins font-medium text-xl tracking-wider">AQUAMAN</h1>
+         <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
+       </div>
+       <div class="w-[70%] flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+         <img src="movie-poster/batman.jpeg" class="w-[95%] -mt-[25px] h-[95%] rounded-lg object-center object-contain">
+         <h1 class="-mt-[39px] -ml-[10px] font-popins font-medium text-xl">Batman vs superman</h1>
+         <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
+       </div>
+       <div class="w-[70%] flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+         <img src="movie-poster/peacemaker.jpeg" class="w-[95%] -mt-[25px] h-[95%] rounded-lg object-center object-contain">
+         <h1 class="-mt-[39px] -ml-[95px] font-popins font-medium text-xl tracking-wider">Peacemaker</h1>
+         <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
+       </div>
+</article>
 
-     </section>
+
+
    </main>
   <script>
     feather.replace();
