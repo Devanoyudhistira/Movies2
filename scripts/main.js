@@ -7,6 +7,18 @@ const body = document.querySelector('body');
 let rekomen = document.querySelectorAll('.rekomen');
 let ganti = document.querySelectorAll('.ganti');
 
+for(let i = 1;i < slide.length;i++)
+{
+    slide[i].style.display='none'
+}
+
+for(let i = 0;i < slide.length;i++)
+{
+    slide[i].addEventListener('click',() =>{
+        slide[i+1].style.display='block'
+    })
+}
+
 function preventDefault(e) {
     e.preventDefault();
 }
@@ -28,7 +40,7 @@ scrollbutton.addEventListener('click',() =>{
 
 scrollbutton.addEventListener('click',() =>{
     window.scrollTo({
-  top: 610,
+  top: 610 * window.innerHeight,
   left: 0,
   behavior: "smooth",
 });
@@ -40,14 +52,18 @@ scrollbutton.addEventListener('click',() =>{
 
 let curslide = 0;
 
-for(let i = 0;i < nextSlide.length;i++){
-nextSlide[i].addEventListener("click",function() {
-    curslide++;
-    
-    slide.forEach((slide, indx) => {
-        slide.style.transform = `translateX(${100 * (indx - curslide)}%)`;
-    })
-})};
+for(let i = 0; i < nextSlide.length; i++) {
+    nextSlide[i].addEventListener("click", function() {
+        curslide++;
+
+        slide.forEach((slide, indx) => {
+            setTimeout(() => {
+                slide.style.transform = `translateX(${100 * (indx - curslide)}%)`;
+            }, 10 * indx); // Adjust the delay time (in milliseconds) as needed
+        });
+    });
+}
+
 
 let index = 0
 
