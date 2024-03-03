@@ -40,15 +40,15 @@
     }
   </script>
 </head>
-<body class="scroll-smooth flex flex-col bg-slate-800 h-auto overflow-hidden">
+<body class="scroll-smooth flex flex-col bg-slate-800 overflow-hidden">
  
   <div class="landing order-1 w-screen grid h-screen overflow-hidden">
-    <div class="slide absolute justify-center items-center flex flex-col w-full h-full bg-gradient-to-t from-blue-950 to-black duration-500">
+    <div class="slide absolute justify-center items-center flex flex-col w-full h-full bg-gradient-to-t from-blue-950 overflow-hidden to-black duration-500">
       <h1 class="inline-block -mt-[130px] mb-[80px] text-7xl bg-gradient-to-l from-sky-600 to-blue-900 bg-clip-text tracking-wide text-transparent">SpecialZ</h1>
       <span class="text-md font-inter -mt-[70px] italic text-slate-700">"A place where glass becomes a cinema"</span>
       <button class="next text-blue-800 bg-neutral-900/50 text-xl font-popins h-max border-blue-700 font-bold mt-[45px] px-4 p-2 border-solid border-2">Get started</button>
     </div>
-    <div class="slide relative items-center justify-center flex flex-col w-full h-full flex duration-500">
+    <div class="slide relative overflow-hidden items-center justify-center flex flex-col w-full h-full flex duration-500">
       <div class="bg-[url('movie-poster/avenger-ultron.jpg')] w-full h-full bg-center bg-cover"></div>
       <div class="absolute w-full h-full flex flex-col justify-center items-center top-0 bg-slate-950/50">
         <div class="absolute rounded-md mt-[260px] shadow-md shadow-slate-700/70 flex flex-col justify-center gap-2 items-center px-4 py-[90px] h-[130px] bg-gradient-to-t from-blue-900 to-slate-950">
@@ -57,7 +57,7 @@
         </div>
       </div>
     </div>
-    <div class="slide absolute w-full h-full bg-black duration-500">
+    <div class="slide absolute overflow-hidden w-full h-full bg-black duration-500">
       <div class="bg-[url('movie-poster/evangelion-end.jpg')] w-full h-full bg-[70%] bg-cover"></div>
       <div class="absolute w-full h-full flex flex-col justify-center items-center top-0 bg-red-700/0">
         <div class="absolute rounded-md -mt-[200px] shadow-md shadow-slate-700/70 flex flex-col justify-center gap-2 items-center px-4 py-[90px] h-[130px] bg-gradient-to-t from-blue-950 to-slate-950">
@@ -66,7 +66,7 @@
         </div>
       </div>
     </div>
-    <div class="slide absolute justify-center flex w-full h-full duration-500">
+    <div class="slide absolute overflow-hidden justify-center flex w-full h-full duration-500">
       <div class="bg-[url('movie-poster/yuru-camp.jpg')] w-full relative h-full bg-center bg-cover"></div>
       <div class="w-[340px] top-0 rounded-br-full rounded-bl-full absolute h-[180px] bg-blue-950/50 backdrop-blur-sm"></div>
       <div class="absolute w-full h-full text-center flex items-center justify-between flex-col top-0 bg-slate-900/60">
@@ -82,7 +82,7 @@
        </nav>
      <section class="recommended h-max gap-1 overflow-hidden flex justify-center flex-col w-screen shadow-md shadow-blue-800/50 bg-blue-900/40">
        <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/blackphanter.jpeg')] bg-center bg-cover "></div>
-       <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/bocchi.jpg')] bg-center bg-cover "></div>
+       <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/batman.jpeg')] bg-center bg-cover "></div>
        <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/rename.jpeg')] bg-center bg-cover "></div>
        <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/doctor.jpeg')] bg-center bg-cover "></div>
        <div class="rekomen animate-fadein w-full h-[170px] bg-[url('movie-poster/peacemaker.jpeg')] bg-top bg-cover "></div>
@@ -111,35 +111,76 @@
        </button>
 </div>
 </section>
-     <article class="w-[95%] mt-2 h-[250px] rounded-lg whitespace-nowrap overflow-x-auto flex bg-blue-800 gap-[10px] p-2 justify-left snap-type-mandatory">
-       <div class="w-[70%] flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
-         <img src="movie-poster/doctor.jpeg" class="w-[95%] -mt-[25px] h-[95%] rounded-lg object-center object-contain">
-         <h1 class="-mt-[39px] -ml-[50px] font-popins font-medium text-xl tracking-wider">Doctor Strange</h1>
+     <article class="w-[95%] scroll-elem mt-2 h-max rounded-lg whitespace-nowrap overflow-x-auto flex gap-2 flex-col bg-blue-800 gap-[10px] p-2 justify-left snap-type-mandatory">
+       <h1 class="font-popins font-bold ml-2 text-slate-300 text-lg mb-[10px]">the best blockbuster movies</h1>
+       
+       <div class="flex">
+       <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+         <img src="movie-poster/doctor.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
+         <h1 class="-mt-[5px] -ml-[50px] font-popins font-medium text-xl tracking-wider">Doctor Strange</h1>
          <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-slate-300 focus:text-slate-900 font-popins font-medium focus:bg-indigo-600 flex items-center justify-center">watch</button>
        </div>
-       <div class="w-[70%] flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
-         <img src="movie-poster/blackphanter.jpeg" class="w-[95%] -mt-[25px] h-[95%] rounded-lg object-center object-contain">
-         <h1 class="-mt-[39px] -ml-[55px] font-popins font-medium text-xl tracking-wider">BLACK PHANTER</h1>
+       <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+         <img src="movie-poster/blackphanter.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
+         <h1 class="-mt-[5px] -ml-[55px] font-popins font-medium text-xl tracking-wider">BLACK PHANTER</h1>
          <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
        </div>
-       <div class="w-[70%] flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
-         <img src="movie-poster/rename.jpeg" class="w-[95%] -mt-[25px] h-[95%] rounded-lg object-center object-contain">
-         <h1 class="-mt-[39px] -ml-[95px] font-popins font-medium text-xl tracking-wider">AQUAMAN</h1>
+       <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+         <img src="movie-poster/rename.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
+         <h1 class="-mt-[5px] -ml-[95px] font-popins font-medium text-xl tracking-wider">AQUAMAN</h1>
          <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
        </div>
-       <div class="w-[70%] flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
-         <img src="movie-poster/batman.jpeg" class="w-[95%] -mt-[25px] h-[95%] rounded-lg object-center object-contain">
-         <h1 class="-mt-[39px] -ml-[10px] font-popins font-medium text-xl">Batman vs superman</h1>
+       <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+         <img src="movie-poster/batman.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
+         <h1 class="-mt-[5px] -ml-[10px] font-popins font-medium text-xl">Batman vs superman</h1>
+         <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
+         
+       </div>
+       <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+         <img src="movie-poster/peacemaker.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
+         <h1 class="-mt-[5px] -ml-[75px] font-popins font-medium text-xl tracking-wider">Peacemaker</h1>
          <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
        </div>
-       <div class="w-[70%] flex-col justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
-         <img src="movie-poster/peacemaker.jpeg" class="w-[95%] -mt-[25px] h-[95%] rounded-lg object-center object-contain">
-         <h1 class="-mt-[39px] -ml-[95px] font-popins font-medium text-xl tracking-wider">Peacemaker</h1>
-         <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
-       </div>
+         </div>
 </article>
-
-
+<article class="w-[95%] scroll-elem mt-2 h-auto rounded-lg whitespace-nowrap overflow-x-auto flex flex-col bg-blue-800 gap-[10px] p-2 justify-left snap-type-mandatory">
+  <h1 class="font-popins font-bold ml-2 text-slate-300 text-lg">the best anime series</h1>
+       
+  <div class="flex gap-[0]">
+  <div class="w-[70%] rekomendasi flex-col -ml-[20px] justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+    <img src="movie-poster/kessoku.jpeg" class="w-[70%] object-center object-contain">
+    <h1 class="-mt-[5px] ml-[5px] font-popins font-medium text-xl">Bocchi the rock</h1>
+   <button class="w-[70%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
+         </div>
+    <div class="w-[70%] rekomendasi flex-col -ml-[50px] justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+    <img src="movie-poster/mushoku.jpg" class="w-[70%] object-center object-contain">
+    <h1 class="-mt-[5px] ml-[5px] font-popins font-medium text-xl">Mushoku Tensei</h1>
+   <button class="w-[70%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
+         </div>
+    <div class="w-[70%] rekomendasi flex-col -ml-[50px] justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+    <img src="movie-poster/frieren.jpg" class="w-[70%] object-center object-contain">
+    <h1 class="-mt-[5px] ml-[5px] font-popins font-medium text-xl">sousou no frieren</h1>
+   <button class="w-[70%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
+         </div>
+    <div class="w-[70%] rekomendasi flex-col -ml-[30px] justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+    <img src="movie-poster/bsd.jpg" class="w-[67.5%] object-center object-cover">
+    <h1 class="-mt-[5px] ml-[5px] font-popins font-medium text-xl">Bungou stray dogs</h1>
+   <button class="w-[70%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
+         </div>
+    <div class="w-[70%] rekomendasi flex-col -ml-[40px] justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+    <img src="movie-poster/tonikawa.jpeg" class="w-[71%] object-center object-contain">
+    <h1 class="-mt-[5px] ml-[5px] font-popins font-medium text-xl">tonikaku kawaii</h1>
+   <button class="w-[70%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
+         </div>
+      <div class="w-[70%] rekomendasi flex-col -ml-[50px] justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
+    <img src="movie-poster/jjk-season-2.jpg" class="w-[70%] object-center object-contain">
+    <h1 class="-mt-[5px] ml-[5px] font-popins font-medium text-xl">Jujutsu kaisen</h1>
+   <button class="w-[70%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
+         </div>
+    
+  </div>
+  
+       </article>
 
    </main>
   <script>
