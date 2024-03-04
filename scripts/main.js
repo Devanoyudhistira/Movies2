@@ -71,7 +71,7 @@ function isBottom(el) {
     const numItems = items.length;
     
     // Clone the existing items and append them dynamically
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 1; i++) {
       const clonedItem = items[i % numItems].cloneNode(true); // Get the item to clone
       content.appendChild(clonedItem);
     }
