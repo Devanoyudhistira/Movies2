@@ -6,7 +6,34 @@ const main = document.querySelector('main');
 const body = document.querySelector('body');
 let rekomen = document.querySelectorAll('.rekomen');
 let ganti = document.querySelectorAll('.ganti');
+const blockbuster = document.querySelector('.blockbuster ');
+const anime = document.querySelector('.anime-series');
+const movieButton = blockbuster.querySelectorAll('button')
+const movieImg = blockbuster.querySelectorAll('img')
+const animeImg = anime.querySelectorAll('img')
+const animeButton = anime.querySelectorAll('button')
+const thumbnail = document.querySelector('.thumbnail')
+const photo = document.querySelector('.photo')
 
+thumbnail.style.display = 'none'
+
+photo.style.display = 'none'
+
+
+movieButton.forEach((e) => {
+    e.addEventListener('click', () =>{
+        thumbnail.style.display = 'flex'
+    })
+})
+
+for(let i = 0;i < movieButton.length;i++){
+    movieButton[i].addEventListener(
+    'click',() =>{
+        photo.src = movieImg[i].src;
+        setTimeout(() => {
+            photo.style.display = 'block'
+        }, 500);
+    })}
 
 
 
@@ -88,7 +115,6 @@ function isBottom(el) {
   loadMoreContent();
 
 window.addEventListener('beforeunload', function() {
-    // Scroll to the top of the page
     landing.style.display='block'
 });
 
