@@ -26,6 +26,8 @@
             'fadeout':'fadeout 2000ms',
             'size':'size 700ms',
             'gerak':'gerak 500ms',
+            'gerakmundur':'gerak 500ms reverse',
+            
           },
           keyframes: {
   fadein: {
@@ -54,7 +56,7 @@
  
   <div class="landing order-1 w-screen grid h-screen overflow-hidden touch-none">
     <div class="slide  absolute justify-center items-center flex flex-col w-full h-full bg-gradient-to-t from-blue-950 overflow-hidden to-black duration-500">
-      <h1 class="inline-block -mt-[130px] mb-[80px] text-7xl bg-gradient-to-l from-sky-600 to-blue-900 bg-clip-text tracking-wide text-transparent">SpecialZ</h1>
+      <h1 class="inline-block -mt-[130px] mb-[80px] text-7xl specialz bg-gradient-to-l from-sky-600 to-blue-900 bg-clip-text tracking-wide text-transparent">SpecialZ</h1>
       <span class="text-md font-inter -mt-[70px] italic text-slate-700">"A place where glass becomes a cinema"</span>
       <button class="next text-blue-800 bg-neutral-900/50 text-xl font-popins h-max border-blue-700 font-bold mt-[45px] px-4 p-2 border-solid border-2">Get started</button>
     </div>
@@ -67,7 +69,7 @@
         </div>
       </div>
     </div>
-    <div class="slide   absolute overflow-hidden w-full h-full bg-black duration-500">
+    <div class="slide  absolute overflow-hidden w-full h-full bg-black duration-500">
       <div class="bg-[url('movie-poster/evangelion-end.jpg')] w-full h-full bg-[70%] bg-cover"></div>
       <div class="absolute w-full h-full flex flex-col justify-center items-center top-0 bg-red-700/0">
         <div class="absolute rounded-md -mt-[200px] shadow-md shadow-slate-700/70 flex flex-col justify-center gap-2 items-center px-4 py-[90px] h-[130px] bg-gradient-to-t from-blue-950 to-slate-950">
@@ -122,18 +124,19 @@
 </div>
 </section>
      
-     <div class="mx-auto thumbnail overflow-hidden my-[27%] w-[91vw] h-[85vh] pb-[15px] absolute bg-gradient-to-t px-[1px] animate-size origin-top duration-500 from-blue-600 to-blue-700 flex flex-col gap-2 items-center justify-center ">
-       <img class="shrink-0 duration-500 animate-gerak photo w-[90%] h-[30%] mt-2 object-cover object-bottom" src="movie-poster/r.jpeg">
-       <div class=" duration-500 w-[90%] h-[75%] bg-red-500 "></div>
-       <div class="w-[89%] border-2 border-red-500 flex justify-center">
+     <div class="mx-auto thumbnail pt-[15px] overflow-hidden my-[27%] w-[91vw] h-[600px] pb-[15px] absolute z-[100] bg-gradient-to-t px-[1px] flex origin-top duration-500 from-blue-600 to-blue-700 flex-col gap-2 items-center justify-center ">
+    <button class=" close absolute text-3xl -top-[12px] right-2">x</button>
+       <img class="shrink-0 photo -translate-x-[110%] duration-500 w-[90%] h-[32%] mt-2 object-cover object-bottom" src="movie-poster/r.jpeg">
+       <div class="duration-500 shrink-0 -translate-x-[110%] deskripsi w-[90%] h-[60%] bg-red-500 "></div>
+       <div class="w-[89%] watch -translate-x-[110%] duration-500 border-2 border-red-500 flex justify-center">
          <button class="w-[90%] bg-red-900 text-xl font-black font-popins">watch</button>
        </div>
      </div>
      
-     <article class="w-[95%] blockbuster scroll-elem mt-2 h-max rounded-lg whitespace-nowrap overflow-x-auto flex gap-2 flex-col bg-blue-800 gap-[10px] p-2 justify-left snap-type-mandatory">
-       <h1 class="font-popins font-bold ml-2 text-slate-300 text-lg mb-[10px]">the best blockbuster movies</h1>
+     <article class="w-[95%] relative blockbuster scroll-elem mt-2 h-max rounded-lg pt-[60px] whitespace-nowrap overflow-x-auto flex gap-2 flex-col bg-blue-800 gap-[10px] p-2 justify-left snap-type-mandatory">
+       <h1 class="font-popins koke z-[1] left-0 top-0 absolute font-bold ml-2 text-slate-300 text-lg">the best blockbuster movies</h1>
        
-       <div class="flex">
+       <div class="flex relative">
        <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-always snap-center shrink-0 rounded-xl bg-neutral-400/0">
          <img src="movie-poster/doctor.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
          <h1 class="-mt-[5px] -ml-[50px] font-popins font-medium text-xl tracking-wider">Doctor Strange</h1>
@@ -165,7 +168,7 @@
 <article class="w-[95%] anime-series scroll-elem mt-2 h-auto rounded-lg whitespace-nowrap overflow-x-auto flex flex-col bg-blue-800 gap-[10px] p-2 justify-left snap-type-mandatory">
   <h1 class="font-popins font-bold ml-2 text-slate-300 text-lg">the best anime series</h1>
        
-  <div class="flex gap-[0]">
+  <div class="flex gap-2">
   <div class="w-[70%] rekomendasi flex-col -ml-[20px] justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
     <img src="movie-poster/kessoku.jpeg" class="w-[70%] object-center object-contain">
     <h1 class="-mt-[5px] ml-[5px] font-popins font-medium text-xl">Bocchi the rock</h1>

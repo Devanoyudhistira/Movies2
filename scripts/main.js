@@ -1,6 +1,7 @@
 const slide = document.querySelectorAll('.slide');
 const nextSlide = document.querySelectorAll(".next");
 const scrollbutton = document.querySelector('.scrollButton');
+const rekomendasi = document.querySelectorAll('.rekomendasi');
 const landing = document.querySelector('.landing');
 const main = document.querySelector('main');
 const body = document.querySelector('body');
@@ -13,27 +14,42 @@ const movieImg = blockbuster.querySelectorAll('img')
 const animeImg = anime.querySelectorAll('img')
 const animeButton = anime.querySelectorAll('button')
 const thumbnail = document.querySelector('.thumbnail')
+const close = thumbnail.querySelector('.close')
 const photo = document.querySelector('.photo')
+const watch = document.querySelector('.watch')
+const deskripsi = document.querySelector('.deskripsi')
 
-thumbnail.style.display = 'none'
-
-photo.style.display = 'none'
-
-
-movieButton.forEach((e) => {
-    e.addEventListener('click', () =>{
-        thumbnail.style.display = 'flex'
-    })
+close.addEventListener('click',() => {
+    photo.classList.add('-translate-x-[110%]')
+    
+        watch.classList.add('-translate-x-[110%]');
+    deskripsi.classList.add('-translate-x-[110%]');
+    setTimeout(() => {
+    thumbnail.style.transform = 'scalex(0)'
+    },500)
 })
+
+thumbnail.style.transform = 'scalex(0)'
+
+//watch.style.visibility = 'hidden'
+//deskripsi.style.visibility = 'hidden'
 
 for(let i = 0;i < movieButton.length;i++){
     movieButton[i].addEventListener(
     'click',() =>{
+        
+        thumbnail.style.transform = 'scalex(1)'
         photo.src = movieImg[i].src;
         setTimeout(() => {
-            photo.style.display = 'block'
-        }, 500);
+        photo.classList.remove('-translate-x-[110%]')
+            }, 500);
+        setTimeout(() => {
+        watch.classList.remove('-translate-x-[110%]');
+    deskripsi.classList.remove('-translate-x-[110%]');
+        }, 700);
+        
     })}
+
 
 
 
@@ -86,44 +102,5 @@ let control = function(n){
     slide2(index = n)
 }
 slide2(index);
-
-
-function isBottom(el) {
-    return el.getBoundingClientRect().bottom <= window.innerHeight;
-  }
-
-  function loadMoreContent() {
-    const content = document.querySelector('main');
-    const items = content.querySelectorAll('.scroll-elem');
-    const numItems = items.length;
-    
-    // Clone the existing items and append them dynamically
-    for (let i = 0; i < 1; i++) {
-      const clonedItem = items[i % numItems].cloneNode(true); // Get the item to clone
-      content.appendChild(clonedItem);
-    }
-  }
-
-  // Event listener for scroll event
-  document.querySelector('main').addEventListener('scroll', function() {
-    if (isBottom(this)) {
-      loadMoreContent();
-    }
-  });
-
-  // Initial load
-  loadMoreContent();
-
-window.addEventListener('beforeunload', function() {
-    landing.style.display='block'
-});
-
-
-window.addEventListener('beforeunload', function() {
-    // Scroll to the top of the page
-    window.scrollTo(0, 0);
-});
-
-
 
 
