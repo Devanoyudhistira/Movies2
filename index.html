@@ -87,7 +87,7 @@
       </div>
     </div>
   </div>
-   <main class="order-2 w-screen flex flex-col items-center pb-2 bg-gradient-to-b from-slate-950/50 to-blue-800/50 h-auto overflow-hidden">
+   <main class="order-2 w-screen flex flex-col items-center relative pb-2 bg-gradient-to-b from-slate-950/50 to-blue-800/50 h-auto overflow-hidden">
      <nav class="w-screen h-[50px] bg-gradient-to-b from-slate-950/50 to-blue-800/50 flex items-center justify-between">
        <i data-feather='search' class="w-[90px] -ml-[20px] text-slate-300"></i>
        <h1 class="inline-block mr-2 font-popins font-black text-xl bg-gradient-to-b from-blue-600 to-blue-900 bg-clip-text tracking-wide text-transparent">SpecialZ</h1>
@@ -123,66 +123,111 @@
        </button>
 </div>
 </section>
-     
+     <div class=" penghalang absolute w-screen h-full overflow-hidden top-0 z-[100] bg-black/10"></div>
      <div class="mx-auto thumbnail pt-[15px] overflow-hidden my-[27%] w-[91vw] h-[600px] pb-[15px] absolute z-[100] bg-gradient-to-t px-[1px] flex origin-top duration-500 from-blue-900 to-blue-800 flex-col gap-2 items-center justify-center ">
     <button class=" close absolute text-3xl -top-[12px] right-2">x</button>
-       <img class="shrink-0 photo -translate-x-[110%] duration-500 w-[90%] h-[32%] mt-2 object-cover object-bottom" src="movie-poster/r.jpeg">
-       <div class="duration-500 shrink-0 -translate-x-[110%] deskripsi w-[98%] h-[60%] bg-gradient-to-t from-blue-800/90 to-slate-900/20 shadow-md shadow-blue-600 border-2 border-solid border-blue-500 rounded-xl"></div>
+       <img class="shrink-0 photo -translate-x-[110%] duration-500 w-[90%] h-[32%] mt-2 object-cover object-bottom" src="">
+       <div class="duration-500 shrink-0 -translate-x-[110%] deskripsi w-[98%] text-center overflow-auto h-[60%] bg-gradient-to-t from-blue-800/90 to-slate-900/20 shadow-md shadow-blue-600 border-2 border-solid border-blue-500 rounded-xl">
+         <h1 class="judulfilm text-xl text-slate-300 font-bold "></h1>
+         <span class="sinopsisfilm text-slate-200 text-md font-popins  "></span>
+       </div>
        <div class="w-[95%] watch -translate-x-[110%] duration-500 flex justify-center">
          <button class="w-[100%] tracking-wider border-blue-700 border-2 bg-slate-900/30 hover:bg-blue-700 text-slate-200 text-xl rounded-sm font-medium hover:drop-shadow-xl font-inter duration-300">watch</button>
        </div>
      </div>
      
+      
      <article class="w-[95%] relative blockbuster scroll-elem mt-2 h-max rounded-lg pt-[60px] whitespace-nowrap overflow-x-auto flex gap-2 flex-col bg-blue-800 gap-[10px] p-2 justify-left snap-type-mandatory">
-       <h1 class="font-popins koke z-[1] left-0 top-0 absolute font-bold ml-2 text-slate-300 text-lg">the best blockbuster movies</h1>
-       
+       <h1 class="font-popins koke z-[1] left-0 top-[10px] absolute font-bold ml-2 text-slate-300 text-lg">the best blockbuster movies</h1>
+      
        <div class="flex relative">
        <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-always snap-center shrink-0 rounded-xl bg-neutral-400/0">
          <img src="movie-poster/doctor.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
-         <h1 class="-mt-[5px] -ml-[50px] font-popins font-medium text-xl tracking-wider">Doctor Strange</h1>
+         <h1 class="-mt-[5px] judul -ml-[50px] font-popins font-medium text-xl tracking-wider">Doctor Strange</h1>
+          <span class="sinopsis hidden">
+              Marvels "Doctor Strange" follows the story of the talented neurosurgeon Doctor Stephen Strange who, after a tragic car accident, must put ego aside and learn the secrets of a hidden world of mysticism and alternate dimensions. Based in New York Citys Greenwich Village, Doctor Strange must act as an intermediary between the real world and what lies beyond, utilising a vast array of metaphysical abilities and artifacts to protect the Marvel Cinematic Universe
+            </span>
          <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-slate-300 focus:text-slate-900 font-popins font-medium focus:bg-indigo-600 flex items-center justify-center">watch</button>
        </div>
+         
        <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-always snap-center shrink-0 rounded-xl bg-neutral-400/0">
          <img src="movie-poster/blackphanter.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
-         <h1 class="-mt-[5px] -ml-[55px] font-popins font-medium text-xl tracking-wider">BLACK PHANTER</h1>
+         <h1 class="-mt-[5px] judul -ml-[55px] font-popins font-medium text-xl tracking-wider">BLACK PHANTER</h1>
+         <span class="sinopsis hidden">
+              After the events of Captain America: Civil War, Prince T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new king. However, T'Challa soon finds that he is challenged for the throne from factions within his own country. When two foes conspire to destroy Wakanda, the hero known as Black Panther must team up with C.I.A. agent Everett K. Ross and members of the Dora Milaje, Wakandan special forces, to prevent Wakanda from being dragged into a world war
+            </span>
          <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
        </div>
        <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-always snap-center shrink-0 rounded-xl bg-neutral-400/0">
          <img src="movie-poster/rename.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
-         <h1 class="-mt-[5px] -ml-[95px] font-popins font-medium text-xl tracking-wider">AQUAMAN</h1>
+         <h1 class="-mt-[5px] judul -ml-[95px] font-popins font-medium text-xl tracking-wider">AQUAMAN</h1>
+            <span class="sinopsis hidden">
+              Arthur Curry, the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land.
+               Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half of his blood being of Atlanteean descent, thus making him the rightful heir to the throne of the undersea kingdom of Atlantis. However, Arthur learns that Atlantis is being ruled by his malicious half-brother Orm (Patrick Wilson), who seeks to unite the seven underwater kingdoms and wage war upon the surface. With aid from Nuidis Vulko (Willem Dafoe) and the gorgeous Mera (Amber Heard), Arthur must discover the full potential of his true destiny and become Aquaman in order to save Atlantis and the surface from Orm's evil plot.
+         </span>
          <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
        </div>
        <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-always snap-center shrink-0 rounded-xl bg-neutral-400/0">
          <img src="movie-poster/batman.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
-         <h1 class="-mt-[5px] -ml-[10px] font-popins font-medium text-xl">Batman vs superman</h1>
+         <h1 class="-mt-[5px] judul -ml-[10px] font-popins font-medium text-xl">Batman vs superman</h1>
+         <span class="sinopsis hidden">
+              The general public is concerned over having Superman on their planet and letting the "Dark Knight" - Batman - pursue the streets of Gotham. While this is happening, a power-phobic Batman tries to attack Superman. Meanwhile, Superman tries to settle on a decision, and Lex Luthor, the criminal mastermind and millionaire, tries to use his own advantages to fight the "Man of Steel".—Mine Turtle
+           </span>
          <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
          
        </div>
        <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-always snap-center shrink-0 rounded-xl bg-neutral-400/0">
          <img src="movie-poster/peacemaker.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
-         <h1 class="-mt-[5px] -ml-[75px] font-popins font-medium text-xl tracking-wider">Peacemaker</h1>
+         <h1 class="-mt-[5px] judul -ml-[75px] font-popins font-medium text-xl tracking-wider">Peacemaker</h1>
+          <span class="sinopsis hidden">
+              Picking up where The Suicide Squad (2021) left off, Peacemaker returns home after recovering from his encounter with Bloodsport - only to discover that his freedom comes at a price.
+            </span>
          <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
        </div>
           <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-always snap-center shrink-0 rounded-xl bg-neutral-400/0">
          <img src="movie-poster/the-boys.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
-         <h1 class="-mt-[5px] -ml-[105px] font-popins font-medium text-xl tracking-wider">The Boys</h1>
+         <h1 class="-mt-[5px] judul -ml-[105px] font-popins font-medium text-xl tracking-wider">The Boys</h1>
+            <span class="sinopsis hidden">
+              Seri ini bercerita tentang sebuah dunia di mana orang-orang yang berkekuatan super dianggap sebagai seorang pahlawan oleh khalayak umum. Mereka bekerja untuk sebuah perusahaan bernama Vought International, yang memasarkan dan menjadikan mereka sebuah komoditas. Sisi lain terungkap bahwa dibalik pesona heroik, mereka juga bertindak korup dan arogan. Serial ini berfokus pada dua kelompok: Seven, para pahlawan super Vought International yang terkemuka dan Boys, pihak yang menginginkan para pahlawan super yang korup tetap berada dalam kendali. 
+              
+            </span>
+            
          <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
        </div>
          
           <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-always snap-center shrink-0 rounded-xl bg-neutral-400/0">
          <img src="movie-poster/endgame.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
-         <h1 class="-mt-[5px] -ml-[10px] font-popins font-medium text-xl tracking-wider">Avenger Endgame</h1>
+         <h1 class="-mt-[5px] judul -ml-[10px] font-popins font-medium text-xl tracking-wider">Avenger Endgame</h1>
+            <span class="sinopsis hidden">
+              In 2018, twenty-three days after Thanos erased half of all life in the universe,[a] Carol Danvers rescues Tony Stark and Nebula from deep space and they reunite with the remaining Avengers—Bruce Banner, Steve Rogers, Thor, Natasha Romanoff, and James Rhodes—and Rocket on Earth. Locating Thanos on an uninhabited planet, they plan to use the Infinity Stones to reverse his actions but find that Thanos has destroyed them. Enraged, Thor decapitates Thanos.
+              
+            </span>
          <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
        </div>
          
           <div class="w-[70%] rekomendasi flex-col justify-top flex items-center h-[95%] snap-always snap-center shrink-0 rounded-xl bg-neutral-400/0">
          <img src="movie-poster/civilwar.jpeg" class="w-[95%] -mt-[10px] h-[95%] rounded-lg object-center object-contain">
-         <h1 class="-mt-[5px] -ml-[40px] font-popins font-medium text-xl tracking-wider">Captain america</h1>
+         <h1 class="-mt-[5px] judul -ml-[40px] font-popins font-medium text-xl tracking-wider">Captain america</h1>
+            <span class="sinopsis hidden">
+              With many people fearing the actions of super heroes, the government decides to push for the Hero Registration Act, a law that limits a hero's actions. This results in a division in The Avengers. Iron Man stands with this Act, claiming that their actions must be kept in check otherwise cities will continue to be destroyed, but Captain America feels that saving the world is daring enough and that they cannot rely on the government to protect the world. This escalates into an all-out war between Team Iron Man (Iron Man, Black Panther, Vision, Black Widow, War Machine, and Spider-Man) and Team Captain America (Captain America, Bucky Barnes, Falcon, Scarlet Witch, Hawkeye, and Ant Man) while a new villain emerges.
+            </span>
          <button class="w-[92%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
        </div>
+         
          </div>
        
+       
 </article>
+     
+      <div class="mx-auto anime hidden pt-[15px] overflow-hidden my-[27%] w-[91vw] h-[600px] pb-[15px] absolute z-[100] bg-gradient-to-t px-[1px] flex origin-top duration-500 from-blue-900 to-blue-800 flex-col gap-2 items-center justify-center ">
+    <button class=" close-anime absolute text-3xl -top-[12px] right-2">x</button>
+       <img class="shrink-0 photo-anim -translate-x-[110%] duration-500 w-[90%] h-[32%] mt-2 object-cover object-bottom" src="movie-poster/r.jpeg">
+       <div class="duration-500 shrink-0 -translate-x-[110%] deskripsi-anim w-[98%] h-[60%] bg-gradient-to-t from-blue-800/90 to-slate-900/20 shadow-md shadow-blue-600 border-2 border-solid border-blue-500 rounded-xl"></div>
+       <div class="w-[95%] watch -translate-x-[110%] duration-500 flex justify-center">
+         <button class="w-[100%] stream tracking-wider border-blue-700 border-2 bg-slate-900/30 hover:bg-blue-700 text-slate-200 text-xl rounded-sm font-medium hover:drop-shadow-xl font-inter duration-300">watch</button>
+       </div>
+     </div>
+     
 <article class="w-[95%] anime-series scroll-elem mt-2 h-auto rounded-lg whitespace-nowrap overflow-x-auto flex flex-col bg-blue-800 gap-[10px] p-2 justify-left snap-type-mandatory">
   <h1 class="font-popins font-bold ml-2 text-slate-300 text-lg">the best anime series</h1>
        
@@ -196,7 +241,7 @@
     <img src="movie-poster/mushoku.jpg" class="w-[70%] object-center object-contain">
     <h1 class="-mt-[5px] ml-[5px] font-popins font-medium text-xl">Mushoku Tensei</h1>
    <button class="w-[70%] h-[50px] bg-blue-500 rounded-xl duration-300 text-neutral-200 focus:text-neutral-950 font-popins font-black focus:bg-indigo-600 flex items-center justify-center">watch</button>
-         </div>
+        </div>
     <div class="w-[70%] rekomendasi flex-col -ml-[50px] justify-top flex items-center h-[95%] snap-center shrink-0 rounded-xl bg-neutral-400/0">
     <img src="movie-poster/frieren.jpg" class="w-[70%] object-center object-contain">
     <h1 class="-mt-[5px] ml-[5px] font-popins font-medium text-xl">sousou no frieren</h1>

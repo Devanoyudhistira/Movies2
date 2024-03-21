@@ -18,39 +18,7 @@ const close = thumbnail.querySelector('.close')
 const photo = document.querySelector('.photo')
 const watch = document.querySelector('.watch')
 const deskripsi = document.querySelector('.deskripsi')
-
-close.addEventListener('click',() => {
-    photo.classList.add('-translate-x-[110%]')
-    
-        watch.classList.add('-translate-x-[110%]');
-    deskripsi.classList.add('-translate-x-[110%]');
-    setTimeout(() => {
-    thumbnail.style.transform = 'scalex(0)'
-    },500)
-})
-
-thumbnail.style.transform = 'scalex(0)'
-
-//watch.style.visibility = 'hidden'
-//deskripsi.style.visibility = 'hidden'
-
-for(let i = 0;i < movieButton.length;i++){
-    movieButton[i].addEventListener(
-    'click',() =>{
-        
-        thumbnail.style.transform = 'scalex(1)'
-        photo.src = movieImg[i].src;
-        setTimeout(() => {
-        photo.classList.remove('-translate-x-[110%]')
-            }, 500);
-        setTimeout(() => {
-        watch.classList.remove('-translate-x-[110%]');
-    deskripsi.classList.remove('-translate-x-[110%]');
-        }, 700);
-        
-    })}
-
-
+const judul = document.querySelectorAll('.judul')
 
 
 slide.forEach((elem, idx) => {
@@ -102,5 +70,42 @@ let control = function(n){
     slide2(index = n)
 }
 slide2(index);
+
+
+
+close.addEventListener('click',() => {
+    photo.classList.add('-translate-x-[110%]')
+    document.querySelector('.penghalang').style.display = 'none'
+    watch.classList.add('-translate-x-[110%]');
+    deskripsi.classList.add('-translate-x-[110%]');
+    setTimeout(() => {
+    thumbnail.style.transform = 'scalex(0)'
+    },500)
+})
+
+thumbnail.style.transform = 'scalex(0)'
+
+document.querySelector('.penghalang').style.display = 'none'
+
+for(let i = 0;i < movieButton.length;i++){
+    movieButton[i].addEventListener(
+    'click',() =>{
+        document.querySelector('.penghalang').style.display = 'block'
+        thumbnail.style.transform = 'scalex(1)'
+        photo.src = movieImg[i].src;
+        setTimeout(() => {
+        photo.classList.remove('-translate-x-[110%]')
+            }, 500);
+        setTimeout(() => {
+        watch.classList.remove('-translate-x-[110%]');
+    deskripsi.classList.remove('-translate-x-[110%]');
+        }, 700);
+        document.querySelector('.sinopsisfilm').textContent = document.querySelectorAll('.sinopsis')[i].textContent
+        const judulfilm = document.querySelector('.judulfilm') 
+        judulfilm.textContent = judul[i].textContent
+    })}
+
+
+
 
 
