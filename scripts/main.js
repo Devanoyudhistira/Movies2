@@ -14,11 +14,18 @@ const movieImg = blockbuster.querySelectorAll('img')
 const animeImg = anime.querySelectorAll('img')
 const animeButton = anime.querySelectorAll('button')
 const thumbnail = document.querySelector('.thumbnail')
+const animethumb = document.querySelector('.anime')
 const close = thumbnail.querySelector('.close')
 const photo = document.querySelector('.photo')
 const watch = document.querySelector('.watch')
 const deskripsi = document.querySelector('.deskripsi')
+const deskripsianime = document.querySelector('.deskripsi-anim')
 const judul = document.querySelectorAll('.judul')
+const animephoto = document.querySelector('.photo-anim')
+const judulanime = document.querySelector('.judulanime')
+const sinopsisanime = document.querySelector('.sinopsisanime')
+const stream = document.querySelector('.stream')
+const closeanime = document.querySelector('.close-anime')
 
 
 slide.forEach((elem, idx) => {
@@ -84,6 +91,7 @@ close.addEventListener('click',() => {
 })
 
 thumbnail.style.transform = 'scalex(0)'
+animethumb.style.transform = 'scalex(0)'
 
 document.querySelector('.penghalang').style.display = 'none'
 
@@ -106,6 +114,33 @@ for(let i = 0;i < movieButton.length;i++){
     })}
 
 
+
+   for(let i = 0;i < animeButton.length;i++){
+    animeButton[i].addEventListener(
+    'click',() =>{
+        document.querySelector('.penghalang').style.display = 'block'
+        animethumb.style.transform = 'scalex(1)'
+        animephoto.src = animeImg[i].src;
+        setTimeout(() => {
+        animephoto.classList.remove('-translate-x-[160%]')
+            }, 500);
+        setTimeout(() => {
+        stream.classList.remove('-translate-x-[110%]');
+    deskripsianime.classList.remove('-translate-x-[110%]');
+        }, 700);
+        //document.querySelector('.sinopsisfilm').textContent = document.querySelectorAll('.sinopsis')[i].textContent
+        //const judulfilm = document.querySelector('.judulfilm') 
+        //judulfilm.textContent = judul[i].textContent
+    })}
+closeanime.addEventListener('click',() => {
+    animephoto.classList.add('-translate-x-[160%]')
+    document.querySelector('.penghalang').style.display = 'none'
+    stream.classList.add('-translate-x-[110%]');
+    deskripsianime.classList.add('-translate-x-[110%]');
+    setTimeout(() => {
+    animethumb.style.transform = 'scalex(0)'
+    },500)
+})
 
 
 
