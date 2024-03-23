@@ -90,6 +90,14 @@ close.addEventListener('click',() => {
     },500)
 })
 
+function scrollToElement(elementSelector, offset) {
+    const element = document.querySelector(elementSelector);
+    if (element) {
+        const topOffset = element.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: topOffset, behavior: 'smooth' });
+    }
+}
+
 thumbnail.style.transform = 'scalex(0)'
 animethumb.style.transform = 'scalex(0)'
 
@@ -98,6 +106,7 @@ document.querySelector('.penghalang').style.display = 'none'
 for(let i = 0;i < movieButton.length;i++){
     movieButton[i].addEventListener(
     'click',() =>{
+        scrollToElement('.thumbnail',30)
         document.querySelector('.penghalang').style.display = 'block'
         thumbnail.style.transform = 'scalex(1)'
         photo.src = movieImg[i].src;
@@ -118,6 +127,7 @@ for(let i = 0;i < movieButton.length;i++){
    for(let i = 0;i < animeButton.length;i++){
     animeButton[i].addEventListener(
     'click',() =>{
+        scrollToElement('.anime',30)
         document.querySelector('.penghalang').style.display = 'block'
         animethumb.style.transform = 'scalex(1)'
         animephoto.src = animeImg[i].src;
