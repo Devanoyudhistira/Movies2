@@ -32,9 +32,10 @@ slide.forEach((elem, idx) => {
     elem.style.transform = `translateX(${idx * 100}%)`;   
 });
  
-
+main.style.display = 'none'
 scrollbutton.addEventListener('click',() =>{
     body.classList.remove('overflow-hidden')
+    main.style.display = 'flex'
 })
 
 scrollbutton.addEventListener('click',() =>{
