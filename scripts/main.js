@@ -32,6 +32,44 @@ slide.forEach((elem, idx) => {
     elem.style.transform = `translateX(${idx * 100}%)`;
 });
 
+
+slide[0].querySelector('h1').addEventListener('animationend', ()=> {
+    slide[0].querySelector('span').style.opacity = '1'
+    setTimeout(() => {
+        slide[0].querySelector('button').style.opacity = '1'
+    },400)
+})
+
+nextSlide[0].addEventListener('click',() =>{
+    setTimeout(() => { 
+    slide[1].querySelector('.bungkus').classList.remove('translate-y-[100%]')
+        },500)
+    setTimeout(() => { 
+    slide[1].querySelector('.kotak').classList.remove('translate-x-[100vw]')
+        },1300)
+})
+
+nextSlide[1].addEventListener('click',() =>{
+    setTimeout(() => { 
+    slide[2].querySelector('.bungkus').classList.remove('translate-x-[100%]')
+        },500)
+    setTimeout(() => { 
+    slide[2].querySelector('.kotak').classList.remove('-translate-y-[100vh]')
+        },1300)
+})
+
+slide[3].querySelector('.oval').style.display = 'none'
+
+nextSlide[2].addEventListener('click',() =>{
+    setTimeout(() => { 
+    slide[3].querySelector('.oval').style.display = 'block'
+        },200)
+})
+
+slide[3].querySelector('.oval').addEventListener('animationend',() =>{
+    slide[3].querySelector('.text').style.opacity = '1'
+})
+
 main.style.display = 'none';
 scrollButton.addEventListener('click', () => {
     body.classList.remove('overflow-hidden');
