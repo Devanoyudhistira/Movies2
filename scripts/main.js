@@ -62,7 +62,7 @@ function slideDisplay(n) {
     rekomen[n].style.display = 'block';
 }
 
-function controlSlide(n) {
+function control(n) {
     slideDisplay(index = n);
 }
 
